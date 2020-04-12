@@ -1,1 +1,0 @@
-Svi *.py moraju biti u istom folderu da bi code mogao funkcionisat
