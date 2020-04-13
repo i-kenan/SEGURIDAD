@@ -1,8 +1,7 @@
-import math
 import functions06
 
-line = '------------------------------------'
-LINE = '____________________________________'
+line = '----------------------------------------'
+LINE = '________________________________________'
 SKIP = '\n'
 #-------------------------------------------------------------------------------------------------------------------------------
 print(LINE)
@@ -21,7 +20,7 @@ occurences = functions06.getProbabilitiesFROMuniquelettersANDtext(uniqueLetters,
 
 #Entropy of F
 Entropy = functions06.H_Entropy(occurences)
-print('Entropy of F - ' + str(Entropy))
+print('Entropy of F - ' + str(functions06.roundd(Entropy)))
 print(SKIP)
 print(line)
 #1.b
@@ -34,11 +33,11 @@ codelengths = functions06.codelengthsFROMhuffman(binary_huffman,uniqueLetters)
 
 #Average Length
 averageLength = functions06.l_averagelength(codelengths,occurences)
-print('Average binary length - ' + str(averageLength))
+print('Average binary length - ' + str(round(averageLength,5)))
 
 #Efficacy
 Efficacy = functions06.N_efficacy(Entropy,averageLength,2)
-print('Efficacy - ' + str(Efficacy))
+print('Efficacy - ' + str(round(Efficacy,5)))
 
 #-----------------------------------------------------------------------------------------------------------------------------
 print(LINE)
