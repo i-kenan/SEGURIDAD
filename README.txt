@@ -1,2 +1,3 @@
-Svi *.py moraju biti u istom folderu da bi code mogao funkcionisat
+# Practicing Code Theory in Spain
 
+## These are some of my codes I did for a class while I was an international exchange student.
